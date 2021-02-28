@@ -1,0 +1,23 @@
+version: "3"
+services:
+    api:
+        build: .
+        ports:
+          - "5000:5000"
+        volumes:
+          - ./app
+        depends_on:
+          - database
+            
+    database:
+        container_name: postgres
+        image: postgres:latest
+        env_file: database.conf
+        ports:
+          - 5432:5432  
+        volumes:
+          - db_volume:/var/lib/postgresql
+        restart: always
+
+volumes:
+  db_volume:
