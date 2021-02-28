@@ -1,5 +1,5 @@
 # wishlist (Lista de desejos)
-> Este projeto conciste em uma API para gerir uma lista de desejos. A API foi criada em Python3.7.3 utilizando o microframework Flask e banco de dados PostgreSQL. 
+> Este projeto consiste em uma API para gerir uma lista de desejos. A API foi criada em Python3.7.3 utilizando o microframework Flask e banco de dados PostgreSQL. 
 
 ## Pré-requisitos
 
